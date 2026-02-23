@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+    .header {
+    grid-area: header;
+    background: #ff9800 ;
+    text-align: center;
+}
+
+aside.sidebar {
+    grid-area: sidebar;
+    background: #ff6800;
+    text-align: center;
+}
+
+.content1 {
+    grid-area: content1;
+    background: #ff0000;
+    text-align: center;
+}
+
+.content2 {
+    grid-area: content2;
+    background: #ff00f0eb;
+    text-align: center;
+}
+
+.content3 {
+    grid-area: content3;
+    background:#ff00f0eb;
+    text-align: center;
+}
+
+footer.footer {
+    grid-area: footer;
+    background: #ff9800;
+    text-align: center;
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-areas: "header header header" 
+    "sidebar content1 content1" 
+    "sidebar content2 content3" 
+    "footer footer footer";
+}
+
+html {}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "sidebar content1 content1"
+        "sidebar content2 content3"
+        "footer footer footer";
+    grid-template-rows: 42px 200px 200px 42px;
+}
+
+</style>
+
+<div class="grid-container">
+    <header class="header">header</header>
+    <aside class="sidebar">sidebar</aside>
+    <div class="content1">contenido 1</div>
+    <div class="content2">contenido 2</div>
+    <div class="content3">contenido 3</div>
+    <footer class="footer">footer</footer>
+</div>
+
+
+
+</body>
+</html>
