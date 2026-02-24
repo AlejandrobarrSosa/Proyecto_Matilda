@@ -7,6 +7,11 @@
 </head>
 <body>
     
+
+
+<input type="text" id="personalizado" placeholder="nombre">
+
+
 <style>
     .header {
     grid-area: header;
@@ -67,11 +72,22 @@ html {}
     grid-template-rows: 42px 200px 200px 42px;
 }
 
+aside.sidebar img {
+    height: 100%;
+    width: 130%;
+    margin-top: 36px;
+    position: relative;
+    bottom: 36px;
+    margin-left: -8px;
+}
+
 </style>
 
 <div class="grid-container">
     <header class="header">header</header>
-    <aside class="sidebar">sidebar</aside>
+    <aside class="sidebar">
+        <img src="./assets/warrior.png" alt="">
+        </aside>
     <div class="content1">contenido 1</div>
     <div class="content2">contenido 2</div>
     <div class="content3">contenido 3</div>
